@@ -1,18 +1,11 @@
 package qa.testcases;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import qa.base.TestBase;
-import qa.pages.loginPage;
 
 public class FrameTest {
 

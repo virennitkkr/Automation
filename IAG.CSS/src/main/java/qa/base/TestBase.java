@@ -22,12 +22,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public  class TestBase {
 	public static WebDriver driver;	
 	
-	public static String readExcel() throws IOException
+	public String readExcel() throws IOException
 	{
 
 	    //Create an object of File class to open xlsx file
 
-	    File file =    new File("C:\\Users\\virendra.bhagat\\eclipse-workspace\\IAG.CSS\\src\\main\\java\\TestData\\myTest.xls");
+	    File file =    new File("C:\\Users\\vbhagat\\git\\Automation\\IAG.CSS\\src\\main\\java\\TestData\\myTest.xls");
 
 	    //Create an object of FileInputStream class to read excel file
 
@@ -54,7 +54,7 @@ public  class TestBase {
 	
 	
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\virendra.bhagat\\eclipse-workspace\\com.automation\\dirv\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\vbhagat\\git\\Automation\\IAG.CSS\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
